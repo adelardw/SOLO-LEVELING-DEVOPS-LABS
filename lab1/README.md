@@ -24,15 +24,6 @@ or `image: ${AIRFLOW_IMAGE_NAME:-your_image_name}`
 2. docker-compose -p 'your project name' up -d 
 3. check running containers: docker ps (if healthy - good, else -> wait)
 4. if you want to stop: docker-compose -p 'your project name' stop 
-
-
-# sample DAG's: Train and Validation ML Pipeline with using:
-## Optional: 
-    1. download UV PM: https://docs.astral.sh/uv/#highlights 
-    2. uv venv your_venv_name 
-    3. uv pip install scikit-learn==1.3.2
-    
-
 `
 
 
