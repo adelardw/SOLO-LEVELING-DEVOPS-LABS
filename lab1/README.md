@@ -3,7 +3,7 @@
 ```
 curl -LfO 'https://airflow.apache.org/docs/apache-airflow/2.10.5/docker-compose.yaml'
 ```
-# The next step is .dockerfile (dont remember download docker on you OS):
+# The next step is Dockerfile (dont remember download docker on you OS):
 
 ```
 FROM apache/airflow:2.7.1
