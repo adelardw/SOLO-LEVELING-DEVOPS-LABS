@@ -1,9 +1,9 @@
-[2025-03-09T12:26:08.335+0000] {manager.py:483} INFO - Processing files using up to 2 processes at a time 
-[2025-03-09T12:26:08.336+0000] {manager.py:484} INFO - Process each file at most once every 30 seconds
-[2025-03-09T12:26:08.336+0000] {manager.py:485} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
-[2025-03-09T12:26:08.337+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
-[2025-03-09T12:26:08.338+0000] {manager.py:824} INFO - There are 1 files in /opt/airflow/dags
-[2025-03-09T12:26:08.364+0000] {manager.py:997} INFO - 
+[2025-03-09T18:04:59.970+0000] {manager.py:483} INFO - Processing files using up to 2 processes at a time 
+[2025-03-09T18:04:59.971+0000] {manager.py:484} INFO - Process each file at most once every 30 seconds
+[2025-03-09T18:04:59.971+0000] {manager.py:485} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-03-09T18:04:59.971+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2025-03-09T18:04:59.973+0000] {manager.py:824} INFO - There are 1 files in /opt/airflow/dags
+[2025-03-09T18:05:00.006+0000] {manager.py:997} INFO - 
 ================================================================================
 DAG File Processing Stats
 
@@ -11,156 +11,59 @@ File Path                                 PID  Runtime      # DAGs    # Errors  
 --------------------------------------  -----  ---------  --------  ----------  --------------  ----------  ----------------------
 /opt/airflow/dags/spark_job_example.py    180  0.01s             0           0                                                   0
 ================================================================================
-[2025-03-09T12:26:38.615+0000] {manager.py:997} INFO - 
+[2025-03-09T18:05:30.290+0000] {manager.py:997} INFO - 
 ================================================================================
 DAG File Processing Stats
 
 File Path                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
 --------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
-/opt/airflow/dags/spark_job_example.py    192  0.01s             0           1  0.03s           2025-03-09T12:26:08                       3
+/opt/airflow/dags/spark_job_example.py    192  0.01s             1           0  0.26s           2025-03-09T18:05:00                      45
 ================================================================================
-[2025-03-09T12:26:56.425+0000] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
-[2025-03-09T12:27:18.232+0000] {manager.py:483} INFO - Processing files using up to 2 processes at a time 
-[2025-03-09T12:27:18.232+0000] {manager.py:484} INFO - Process each file at most once every 30 seconds
-[2025-03-09T12:27:18.232+0000] {manager.py:485} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
-[2025-03-09T12:27:18.233+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
-[2025-03-09T12:27:18.235+0000] {manager.py:824} INFO - There are 1 files in /opt/airflow/dags
-[2025-03-09T12:27:18.270+0000] {manager.py:997} INFO - 
-================================================================================
-DAG File Processing Stats
-
-File Path                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run      Last # of DB Queries
---------------------------------------  -----  ---------  --------  ----------  --------------  ----------  ----------------------
-/opt/airflow/dags/spark_job_example.py    180  0.01s             0           0                                                   0
-================================================================================
-[2025-03-09T12:27:48.516+0000] {manager.py:997} INFO - 
+[2025-03-09T18:06:00.667+0000] {manager.py:997} INFO - 
 ================================================================================
 DAG File Processing Stats
 
 File Path                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
 --------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
-/opt/airflow/dags/spark_job_example.py    192  0.00s             1           0  0.05s           2025-03-09T12:27:18                      11
+/opt/airflow/dags/spark_job_example.py    204  0.02s             1           0  0.21s           2025-03-09T18:05:30                      12
 ================================================================================
-[2025-03-09T12:28:18.816+0000] {manager.py:997} INFO - 
-================================================================================
-DAG File Processing Stats
-
-File Path                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
-/opt/airflow/dags/spark_job_example.py    204  0.01s             1           0  0.18s           2025-03-09T12:27:48                      12
-================================================================================
-[2025-03-09T12:28:49.106+0000] {manager.py:997} INFO - 
+[2025-03-09T18:06:31.203+0000] {manager.py:997} INFO - 
 ================================================================================
 DAG File Processing Stats
 
 File Path                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
 --------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
-/opt/airflow/dags/spark_job_example.py    468  0.00s             1           0  0.16s           2025-03-09T12:28:18                      12
+/opt/airflow/dags/spark_job_example.py    216  0.01s             1           0  0.23s           2025-03-09T18:06:00                      12
 ================================================================================
-[2025-03-09T12:29:19.577+0000] {manager.py:997} INFO - 
-================================================================================
-DAG File Processing Stats
-
-File Path                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
-/opt/airflow/dags/spark_job_example.py    612  0.01s             1           0  0.21s           2025-03-09T12:28:49                      12
-================================================================================
-[2025-03-09T12:29:50.003+0000] {manager.py:997} INFO - 
+[2025-03-09T18:07:01.533+0000] {manager.py:997} INFO - 
 ================================================================================
 DAG File Processing Stats
 
 File Path                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
 --------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
-/opt/airflow/dags/spark_job_example.py    623  0.01s             1           0  0.23s           2025-03-09T12:29:19                      12
+/opt/airflow/dags/spark_job_example.py    410  0.02s             1           0  0.18s           2025-03-09T18:06:31                      12
 ================================================================================
-[2025-03-09T12:30:20.565+0000] {manager.py:997} INFO - 
-================================================================================
-DAG File Processing Stats
-
-File Path                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
-/opt/airflow/dags/spark_job_example.py    635  0.01s             1           0  0.18s           2025-03-09T12:29:50                      12
-================================================================================
-[2025-03-09T12:30:50.915+0000] {manager.py:997} INFO - 
+[2025-03-09T18:07:32.057+0000] {manager.py:997} INFO - 
 ================================================================================
 DAG File Processing Stats
 
 File Path                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
 --------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
-/opt/airflow/dags/spark_job_example.py    647  0.01s             1           0  0.08s           2025-03-09T12:30:20                      12
+/opt/airflow/dags/spark_job_example.py    422  0.02s             1           0  0.32s           2025-03-09T18:07:01                      12
 ================================================================================
-[2025-03-09T12:31:21.279+0000] {manager.py:997} INFO - 
-================================================================================
-DAG File Processing Stats
-
-File Path                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
-/opt/airflow/dags/spark_job_example.py    659  0.01s             1           0  0.08s           2025-03-09T12:30:50                      12
-================================================================================
-[2025-03-09T12:31:51.582+0000] {manager.py:997} INFO - 
+[2025-03-09T18:08:02.474+0000] {manager.py:997} INFO - 
 ================================================================================
 DAG File Processing Stats
 
 File Path                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
 --------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
-/opt/airflow/dags/spark_job_example.py    671  0.01s             1           0  0.08s           2025-03-09T12:31:21                      12
+/opt/airflow/dags/spark_job_example.py    434  0.02s             1           0  0.23s           2025-03-09T18:07:32                      12
 ================================================================================
-[2025-03-09T12:32:18.847+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
-[2025-03-09T12:32:18.854+0000] {manager.py:824} INFO - There are 1 files in /opt/airflow/dags
-[2025-03-09T12:32:21.911+0000] {manager.py:997} INFO - 
+[2025-03-09T18:08:32.825+0000] {manager.py:997} INFO - 
 ================================================================================
 DAG File Processing Stats
 
 File Path                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
 --------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
-/opt/airflow/dags/spark_job_example.py    683  0.01s             1           0  0.09s           2025-03-09T12:31:51                      12
+/opt/airflow/dags/spark_job_example.py    446  0.01s             1           0  0.09s           2025-03-09T18:08:02                      12
 ================================================================================
-[2025-03-09T12:32:52.280+0000] {manager.py:997} INFO - 
-================================================================================
-DAG File Processing Stats
-
-File Path                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
-/opt/airflow/dags/spark_job_example.py    695  0.01s             1           0  0.08s           2025-03-09T12:32:21                      12
-================================================================================
-[2025-03-09T12:33:22.677+0000] {manager.py:997} INFO - 
-================================================================================
-DAG File Processing Stats
-
-File Path                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
-/opt/airflow/dags/spark_job_example.py    707  0.01s             1           0  0.08s           2025-03-09T12:32:52                      12
-================================================================================
-[2025-03-09T12:33:53.061+0000] {manager.py:997} INFO - 
-================================================================================
-DAG File Processing Stats
-
-File Path                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
-/opt/airflow/dags/spark_job_example.py    719  0.01s             1           0  0.08s           2025-03-09T12:33:22                      12
-================================================================================
-[2025-03-09T12:34:23.395+0000] {manager.py:997} INFO - 
-================================================================================
-DAG File Processing Stats
-
-File Path                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
-/opt/airflow/dags/spark_job_example.py    738  0.01s             1           0  0.09s           2025-03-09T12:33:53                      12
-================================================================================
-[2025-03-09T12:34:53.801+0000] {manager.py:997} INFO - 
-================================================================================
-DAG File Processing Stats
-
-File Path                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
-/opt/airflow/dags/spark_job_example.py    750  0.01s             1           0  0.11s           2025-03-09T12:34:23                      12
-================================================================================
-[2025-03-09T12:35:24.157+0000] {manager.py:997} INFO - 
-================================================================================
-DAG File Processing Stats
-
-File Path                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
-/opt/airflow/dags/spark_job_example.py    762  0.01s             1           0  0.08s           2025-03-09T12:34:53                      12
-================================================================================
-[2025-03-09T12:35:35.908+0000] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15

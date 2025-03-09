@@ -1,6 +1,5 @@
-from pyspark import SparkConf, SparkContext
+#from pyspark import SparkConf, SparkContext
 from pyspark.sql import SparkSession
-from pyspark.sql.functions import rand
 from pyspark.sql.types import StructType, StructField, IntegerType, FloatType
 import random
 
@@ -9,11 +8,12 @@ import random
 def main():
     spark = SparkSession.builder \
                         .appName("RandomDataExample") \
-                        .config("spark.driver.memory", "4g") \
-                        .config("spark.executor.memory", "4g") \
-                        .config("spark.cores.max", "2") \
                         .master("spark://spark-master:7077") \
-                        .getOrCreate()    
+                        .getOrCreate()
+                        #.config("spark.driver.memory", "4g") \
+                        #.config("spark.executor.memory", "4g") \
+                        #.config("spark.cores.max", "2") \
+                            
                         
                         
 
@@ -31,7 +31,7 @@ def main():
     
     filtered_df = df.filter(df["value"] > 0.5)
     grouped_df = filtered_df.groupBy("value").count()
-    print("Первые 10 строк данных: ", grouped_df.show(10))
+    print("Сгруппированные по значениям: ", grouped_df.show(10))
     spark.stop()
     
 if __name__ == '__main__':

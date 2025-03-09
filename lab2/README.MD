@@ -2,23 +2,23 @@
 ## сама задачка должна формироваться так:
 
 ```
-spark_job = SparkSubmitOperator(task_id='Spark Task: 0', 
+spark_job = SparkSubmitOperator(task_id='Spark_Task_1', 
                                 application='/opt/airflow/spark/spark_workflow.py',
-                                conn_id='spark_local', 
+                                conn_id='spark_conn_id_1', 
                                 dag=dag)
 ```                                
 ## соответсвенно, сколько Spark тасок/приложений в данном DAG -> столько раз и нужно создавать различных spark_job's под каждую таску/приложение:
 
 ```
-spark_job_0 = SparkSubmitOperator(task_id='Spark Task: 0', 
+spark_job_1 = SparkSubmitOperator(task_id='Spark_Task_1', 
                                 application='/opt/airflow/spark/spark_workflow_0.py',
-                                conn_id='spark_local', 
+                                conn_id='spark_conn_id_1', 
                                 dag=dag)
 ...
 
-spark_job_k = SparkSubmitOperator(task_id='Spark Task: l', 
+spark_job_k = SparkSubmitOperator(task_id='Spark_Task_k', 
                                 application='/opt/airflow/spark/spark_workflow_k.py',
-                                conn_id='spark_local', 
+                                conn_id='spark_conn_id_k', 
                                 dag=dag)
                                 
 ```             
@@ -242,5 +242,5 @@ volumes:
     2. Запустить: docker-compose -p 'project name' up -d
     3. Перейти в localhost:8080 и указать коннект к Spark (логин/пароль: airflow/airflow)
     4. Запустить таску
-    5. Перейти на localhost:4040 и следить за воркером/b spark
+    5. Перейти на localhost:4040 и следить за воркером/и spark
     6. Остановка контейнера: docker-compose -p 'project name' stop # (или down)

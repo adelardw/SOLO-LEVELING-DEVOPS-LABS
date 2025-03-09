@@ -116,11 +116,6 @@ services:
     ports:    
       - "7001:7000"  
     command: '/opt/spark/bin/spark-class org.apache.spark.deploy.worker.Worker spark://spark-master:7077' 
-    deploy:
-      resources:
-        limits:
-          cpus: '4'  
-          memory: 8G  
   
   airflow-init:
     <<: *airflow-common
